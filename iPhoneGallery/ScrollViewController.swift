@@ -35,7 +35,7 @@ class ScrollViewController: UIViewController , UIScrollViewDelegate {
         //let scrollImageView = UIImageView(image: image)
         // scrollImageView.frame = CGRect(x: 0, y: 150, width: 400, height: 400)
         self.view.addSubview(scrollImageView)
-        scrollView.minimumZoomScale = 0.1
+        scrollView.minimumZoomScale = 0.2
         scrollView.maximumZoomScale = 0.9
         
     }
