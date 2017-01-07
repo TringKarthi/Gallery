@@ -10,20 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let navigationTitle = "Home"
+    let treeImage = "treeimage" , image = "Image"
     let treeButton = UIButton(type: .custom)
     let fallsButton = UIButton(type: .custom)
     
     override func viewDidLoad() {
         
-        self.navigationController?.title = "Home"
+        self.navigationController?.title = navigationTitle
         
-        treeButton.setImage(UIImage(named: "treeimage"), for: .normal)
+        treeButton.setImage(UIImage(named: treeImage), for: .normal)
         treeButton.frame = CGRect(x: 0, y: 150, width:200, height: 200 )
         treeButton.addTarget(self, action: #selector(buttonPress) , for: .touchUpInside)
         treeButton.tag = 101
         self.view.addSubview(treeButton)
         
-        fallsButton.setImage(UIImage(named: "Image"), for: .normal)
+        fallsButton.setImage(UIImage(named: image), for: .normal)
         fallsButton.frame = CGRect(x: 205, y: 150, width:200, height: 200 )
         fallsButton.addTarget(self, action: #selector(buttonPress), for: .touchUpInside)
         fallsButton.tag = 102
